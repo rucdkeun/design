@@ -1,95 +1,94 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
-  <title>축하합니다!</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>kylie. lee</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <header class="header">
-    <div class="logo">Kylie</div>
-    <nav>
-      <a class="active" href="#">Home</a>
-      <a href="#">Projects</a>
-      <a href="#">About</a>
-    </nav>
-  </header>
 
-  <main>
-    <section class="intro">
-      <p>
-        <strong>Kylie</strong> I'm a product designer in Incheon. <br>
-        I'm a product designer in Incheon. <br>
-        I'm a product designer in Incheon. <br>
-      </p>
+    <header class="navbar">
+        <a href="index.html" class="active">HOME</a>
+        <a href="sub.html">GALERY</a>
+        <a href="#">INFO</a>
+        <a href="#">UPDATE</a>
+    </header>
+
+    <main class="hero">
+
+        <!-- 타이틀 -->
+        <section class="title-wrap">
+            <!-- 움직이는 데코 -->
+            <div class="floating circle left"></div>
+            <div class="floating circle right"></div>
+            <h2>Hello</h2>
+
+            <div class="motion-wrapper">
+
+                <div class="beauty-motion">
+                    <div class="line left-line"></div>
+                    <div class="beauty-box">
+                        <h1>I'm kylie</h1>
+                    </div>
+                    <div class="line right-line"></div>
+                </div>
+            </div>
+
+        <div class="woman-tag">Product Designer</div>
+        </section>
+
+    <!-- 메인 이미지 -->
+    <section class="image-area">
+        <div class="frame"></div>
+
+        <img src="imgs/kylie.jpeg" alt="kylie" class="main-model"/>
+
+    <!-- 버튼들 -->
+        <button class="folder folder1" onclick="location.href='#'">
+            📁 <span>VISUAL EDITS</span>
+        </button>
+
+      <button class="folder folder2" onclick="location.href='#'">
+        📁 <span>UIUX DESIGN</span>
+      </button>
+
+      <button class="folder folder3" onclick="location.href='#'">
+        📁 <span>CREATIVE CONTENT</span>
+      </button>
+
+      <button class="folder folder4" onclick="location.href='#'">
+        📁 <span>ARCHIVE</span>
+      </button>
     </section>
 
-    <section class="exhibition">
-      <h2>Current Projects</h2>
+    <!-- 메세지 -->
+    <div class="message-box">
+      <input type="text" placeholder="Send Message"/>
+      <button>➤</button>
+    </div>
 
-      <div class="grid two">
-        <img src="images/4.png" alt="">
-        <img src="images/5.png" alt="">
-        <img src="images/6.png" alt="">
-      </div>
-
-      <div class="info-row">
-        <div>
-          <p>Yang-ha, Yoori: Micro-Disaster</p>
-          <p>04/10-05/23/2026</p>
-        </div>
-        <a href="#">View more ↗</a>
-      </div>
-    </section>
-
-    <section class="exhibition">
-      <h2 class="light">Past Projects</h2>
-<!--
-      <img class="wide-img" src="images/past-wide.jpg" alt="">
-    -->
-
-      <div class="grid two bordered">
-        <img src="images/8.png" alt="">
-        <img src="images/9.png" alt="">
-        <img src="images/9.png" alt="">
-      </div>
-
-      <div class="info-row">
-        <div>
-          <p>Kyu Hwa Moon, Jae Youl Joung, Sung Joo Ham: Life in Between</p>
-          <p>11/19-12/27/2025</p>
-        </div>
-        <a href="#">View more ↗</a>
-      </div>
-    </section>
-
-    <section class="about">
-      <button>About</button>
-
-      <div class="about-grid">
-        <div class="contact">
-          <p>인천 Republic of Korea</p>
-          <p>E k.eun2050@gmail.com</p>
-          <p>T 02.6207.3211</p>
-          <br>
-          <p>월 - 금요일, 10 - 18시</p>
-          <p>Wednesday - Saturday, 12pm - 18pm</p>
-          <p>(Closed on Mon, Tue, Sunday and Holidays)</p>
-        </div>
-
-        <img src="images/10.png" alt="">
-      </div>
-    </section>
   </main>
+  <!-- FOOTER -->
+    <footer class="footer">
 
-  <footer>
-    <p>Copyright 2026. Kylie All rights reserved.</p>
-  </footer>
+        <div class="footer-logo">
+            Product Designer
+        </div>
 
-  <a class="top-btn" href="#">↑</a>
+        <div class="footer-menu">
+            <a href="#">INSTAGRAM</a>
+            <a href="#">PINTEREST</a>
+            <a href="#">CONTACT</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 프로덕트 디자이너 이경은 포트폴리오 ALL RIGHTS RESERVED
+        </p>
+
+    </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
