@@ -131,7 +131,7 @@ body{
 }
 
 .card{
-  aspect-ratio:12/18;
+  aspect-ratio:12/14;
   border:1px solid #bfbfbf;
   background:white;
   display:flex;
