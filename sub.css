@@ -22,15 +22,23 @@ body{
 }
 
 .section-title{
-  margin-bottom: 40px;
-}
-.section-title h4{
-    margin:0;
-}
-.section-title p{
-    margin-top:8px;
+    text-align:center;
+    margin-bottom:60px;
 }
 
+.section-title h4{
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:16px;
+}
+
+.section-title p{
+    font-size:18px;
+    line-height:1.7;
+    color:#666;
+    max-width:700px;
+    margin:0 auto;
+}
 /* ======================
    TAB
 ====================== */
