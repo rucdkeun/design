@@ -1,0 +1,11 @@
+.about-photo{
+    width:100%;
+    max-width:480px;
+    margin:0 auto;
+}
+
+.about-photo img{
+    width:100%;
+    height:auto;
+    display:block;
+}
