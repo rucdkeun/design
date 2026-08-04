@@ -1,26 +1,70 @@
 <!-- about.html -->
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>이경은 Portfolio</title>
+    <!-- Google Fonts: Bebas Neue & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="sub.css">
+    <link rel="stylesheet" href="about.css">
 </head>
 
 <body>
     <header class="navbar">
-        <a href="index.html" class="active">HOME</a>
-        <a href="about.html">ABOUT</a>
+        <a href="index.html">HOME</a>
+        <a href="about.html" class="active">ABOUT</a>
         <a href="https://fig.page/PcxB1cG" target="_blank" rel="noopener noreferrer">VIEW PORTFOLIO</a>
         <a href="mailto:k.eun2050@gmail.com">CONTACT</a>
     </header>
 
-    <section class="travel-wrap">
-        
-    </section>
-    <script src="sub.js"></script>
+    <!-- Main Poster Canvas -->
+    <main class="page-container">
+        <div class="poster-card">
+
+            <!-- Top Section: Lanyard Badge Card Image (Interactive Hover Motion) -->
+            <div class="card-wrapper">
+                <div class="card-image-box" id="tiltCard">
+                    <img src="imgs/lanyard_card_badge.png" alt="BORCELLE Pass Card" class="card-img">
+                </div>
+            </div>
+            <!-- Main Title: BORCELLE (Overlapped by Card) -->
+            <header class="poster-header">
+                <h1 class="brand-title">BORCELLE</h1>
+            </header>
+            <!-- Content Columns Section -->
+            <section class="poster-body">
+                <div class="text-column">
+                    <h2 class="column-title">SUN-DRENCHED ATTITUDE</h2>
+                    <div class="column-content">
+                        <p>Designed for days that start with sunlight and end under city lights, these sunglasses bring
+                            effortless attitude to every look.</p>
+                        <p>Clean lines, bold frames and refined details turn a simple accessory into the statement piece
+                            of the season.</p>
+                    </div>
+                </div>
+                <div class="text-column">
+                    <h2 class="column-title">MADE FOR SUNNY DAYS</h2>
+                    <div class="column-content">
+                        <p>More than just protection from the sun, these sunglasses capture the spirit of the season.
+                        </p>
+                        <p>Lightweight, comfortable and undeniably stylish, they are made to follow you from morning
+                            coffee to sunset drinks.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+    <script src="about.js"></script>
 
 </body>
+
 </html>
