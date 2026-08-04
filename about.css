@@ -4,9 +4,6 @@
 :root {
     --bg-canvas: #FAF9F6;
     --color-text: #0f172a;
-    --font-brand: 'Bebas Neue', sans-serif;
-    --font-heading: 'Pretendard', 'Noto Sans KR', 'Montserrat', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
-    --font-body: 'Pretendard', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
 
     --poster-width: 880px;
     --color-primary: #1d4ed8;
@@ -22,7 +19,6 @@
 body {
     background-color: #f3f1ee;
     color: var(--color-text);
-    font-family: var(--font-body);
     min-height: 100vh;
     padding-top: 100px;
     padding-bottom: 60px;
@@ -136,6 +132,7 @@ body {
     object-fit: contain;
     border-radius: 4px;
 }
+
 .about-content {
     width: 100%;
     position: relative;
@@ -147,170 +144,6 @@ body {
     margin-bottom: 48px;
 }
 
-.section-tag {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    font-weight: 800;
-    letter-spacing: 0.1em;
-    color: #0f172a;
-    text-transform: uppercase;
-    display: block;
-    margin-bottom: 16px;
-}
-
-.intro-title {
-    font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
-    font-size: 42px;
-    font-weight: 800;
-    color: #0f172a;
-    line-height: 1.25;
-    margin-bottom: 14px;
-    letter-spacing: -0.035em;
-}
-
-.intro-subtitle {
-    font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
-    font-size: 22px;
-    font-weight: 700;
-    color: #1e293b;
-    line-height: 1.45;
-    margin-bottom: 14px;
-    letter-spacing: -0.025em;
-    word-break: keep-all;
-}
-
-.highlight-name {
-    color: var(--color-primary);
-    font-weight: 800;
-}
-
-.intro-desc {
-    font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
-    font-size: 15.5px;
-    font-weight: 500;
-    color: #475569;
-    line-height: 1.6;
-    letter-spacing: -0.015em;
-    word-break: keep-all;
-}
-
-/* ==========================================================================
-   3 COLUMNS GRID (EXPERTISE / STRENGTHS / TOOLS)
-   ========================================================================== */
-.info-grid {
-    display: grid;
-    grid-template-columns: 1fr 1.2fr 1.3fr;
-    gap: 36px;
-    width: 100%;
-    align-items: start;
-}
-
-.info-col {
-    display: flex;
-    flex-direction: column;
-}
-
-.col-header {
-    font-size: 22px;
-    color: #0f172a;
-    text-transform: uppercase;
-    margin-bottom: 22px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-    letter-spacing: 0.05em;
-}
-
-/* Column 1: EXPERTISE */
-.expertise-list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.expertise-list li {
-    font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
-    font-size: 14.5px;
-    font-weight: 600;
-    color: #334155;
-    line-height: 1.4;
-    letter-spacing: -0.02em;
-}
-
-/* Column 2: STRENGTHS */
-.strengths-list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 22px;
-}
-
-.strengths-list li h4 {
-    font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
-    font-size: 15.5px;
-    font-weight: 700;
-    color: #0f172a;
-    margin-bottom: 5px;
-    letter-spacing: -0.02em;
-}
-
-.strengths-list li p {
-    font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
-    font-size: 13.5px;
-    font-weight: 400;
-    color: #64748b;
-    line-height: 1.52;
-    letter-spacing: -0.015em;
-    word-break: keep-all;
-}
-
-/* Column 3: TOOLS */
-.tools-group {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-}
-
-.tool-category {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.tool-label {
-    font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
-    font-size: 13.5px;
-    font-weight: 700;
-    color: #1e293b;
-    letter-spacing: -0.01em;
-}
-
-.badge-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px 8px;
-}
-
-.tool-badge {
-    font-family: 'Pretendard', 'Montserrat', sans-serif;
-    font-size: 11.5px;
-    font-weight: 600;
-    color: #1d4ed8;
-    background-color: #eff6ff;
-    border: 1px solid #dbeafe;
-    padding: 4px 11px;
-    border-radius: 20px;
-    display: inline-block;
-    white-space: nowrap;
-    letter-spacing: -0.01em;
-    transition: all 0.15s ease;
-}
-
-.tool-badge:hover {
-    background-color: #dbeafe;
-    border-color: #bfdbfe;
-    transform: translateY(-1px);
-}
 
 /* ==========================================================================
    RESPONSIVE DESIGN
