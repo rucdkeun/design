@@ -1,120 +1,213 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="ko">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Riley. lee</title>
+  <title>Riley Lee Portfolio</title>
   <link
-    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@1,600&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="about.css">
 </head>
 
 <body>
-
   <header class="navbar">
-    <a href="index.html" class="active">HOME</a>
-    <!--<a href="about.html">ABOUT</a>-->
+    <a href="#home" class="nav-link active">HOME</a>
+    <a href="#about" class="nav-link">ABOUT</a>
+    <a href="#works" class="nav-link">WORKS</a>
     <a href="https://fig.page/PcxB1cG" target="_blank" rel="noopener noreferrer">VIEW PORTFOLIO</a>
-    <a href="mailto:k.eun2050@gmail.com">CONTACT</a>
+    <a href="#contact" class="nav-link">CONTACT</a>
   </header>
 
-  <main class="hero">
+  <nav class="section-dots" aria-label="페이지 이동">
+    <a href="#home" class="dot active" aria-label="홈으로 이동"></a>
+    <a href="#about" class="dot" aria-label="소개로 이동"></a>
+    <a href="#works" class="dot" aria-label="작업 목록으로 이동"></a>
+    <a href="#contact" class="dot" aria-label="연락처로 이동"></a>
+  </nav>
 
-    <!-- 타이틀 -->
-    <section class="title-wrap">
-      <!-- 움직이는 데코 -->
-      <div class="floating circle left"></div>
-      <div class="floating circle right"></div>
-      <h2>Hello</h2>
+  <main class="snap-container">
+    <section class="snap-section intro-section" id="home" data-section="home">
+      <div class="title-wrap">
+        <h2>Hello</h2>
 
-      <div class="motion-wrapper">
+        <div class="motion-wrapper">
+          <div class="beauty-motion">
 
-        <div class="beauty-motion">
-          <div class="line left-line"></div>
-          <div class="beauty-box">
-            <h1>I'm Riley</h1>
+            <div class="beauty-box">
+              <h1>I'm Riley</h1>
+            </div>
+
           </div>
-          <div class="line right-line"></div>
         </div>
+
+        <div class="woman-tag">Brand Experience &amp; Product Designer</div>
       </div>
 
-      <div class="woman-tag">Brand Experience & Product Designer</div>
+      <a href="#about" class="scroll-cue" aria-label="작업 보기">
+        <span class="scroll-text">SCROLL TO EXPLORE</span>
+
+        <div class="mouse-icon">
+          <span class="mouse-wheel"></span>
+        </div>
+
+        <div class="scroll-arrows">
+          <span></span>
+          <span></span>
+        </div>
+      </a>
     </section>
 
-    <!-- 메인 이미지 -->
-    <section class="image-area">
-      <!-- Main Poster Canvas -->
-      <main class="page-container">
-        <div class="poster-card">
 
-          <!-- Top Section: Lanyard Badge Card Image (Interactive Hover Motion) -->
-          <div class="card-wrapper">
-            <div class="card-image-box" id="tiltCard">
-              <img src="imgs/lanyard_card_badge.png" alt="RILEY LEE Pass Card" class="card-img">
+    <section class="snap-section about-section" id="about" data-section="about">
+      <div class="about-inner">
+        <p class="about-eyebrow">ABOUT ME</p>
+
+        <div class="about-intro">
+          <h2>안녕하세요.</h2>
+          <p class="about-main-copy">
+            브랜드와 사용자의 경험을 연결하는 디자이너 <strong>이경은</strong>입니다.
+          </p>
+          <p class="about-sub-copy">
+            브랜드의 방향을 이해하고 사용자의 경험을 고려해 비즈니스 목표와 연결되는 디자인을 만듭니다.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-column">
+            <h3>EXPERTISE</h3>
+            <ul class="expertise-list">
+              <li>브랜드 런칭</li>
+              <li>웹사이트 리뉴얼</li>
+              <li>IA · UX/UI 설계</li>
+              <li>상세페이지 기획</li>
+              <li>마케팅 콘텐츠</li>
+              <li>패키지 디자인</li>
+              <li>비주얼 디렉팅</li>
+              <li>촬영 · 리터칭</li>
+            </ul>
+          </div>
+
+          <div class="about-column strengths-column">
+            <h3>STRENGTHS</h3>
+
+            <div class="strength-item">
+              <h4><span>•</span> Brand Thinking</h4>
+              <p>브랜드 아이덴티티를 다양한 채널에서 일관된 경험으로 연결합니다.</p>
+            </div>
+
+            <div class="strength-item">
+              <h4><span>•</span> User-centered Design</h4>
+              <p>사용자의 탐색과 구매 경험을 고려한 구조와 비주얼을 설계합니다.</p>
+            </div>
+
+            <div class="strength-item">
+              <h4><span>•</span> Collaboration</h4>
+              <p>기획자, BM과 협업하며 디자인 방향을 제안하고 함께 문제를 해결합니다.</p>
             </div>
           </div>
-          <!-- Main Title: RILEY LEE (Overlapped by Card) -->
-          <header class="poster-header">
-            <h1 class="brand-title">RILEY LEE</h1>
-          </header>
-          <!-- Main Content Image Section -->
-          <section class="about-image-section">
-            <!-- 버튼들 -->
-            <button class="folder folder1" onclick="location.href='uiux.html'">
-              📁 <span>UI/UX</span>
-            </button>
 
-            <button class="folder folder2" onclick="location.href='brand.html'">
-              📁 <span>BRAND</span>
-            </button>
+          <div class="about-column">
+            <h3>TOOLS</h3>
 
-            <button class="folder folder3" onclick="location.href='visual.html'">
-              📁 <span>VISUAL</span>
-            </button>
+            <div class="tool-group">
+              <p>• DESIGN</p>
+              <div class="tool-tags">
+                <span>Photoshop</span><span>Illustrator</span><span>Figma</span>
+              </div>
+            </div>
 
-            <button class="folder folder4" onclick="location.href='archive.html'">
-              📁 <span>ARCHIVE</span>
-            </button>
-          </section>
+            <div class="tool-group">
+              <p>• MOTION</p>
+              <div class="tool-tags">
+                <span>Premiere Pro</span><span>After Effects</span>
+              </div>
+            </div>
+
+            <div class="tool-group">
+              <p>• WEB</p>
+              <div class="tool-tags">
+                <span>HTML</span><span>CSS</span><span>Cafe24</span>
+              </div>
+            </div>
+
+            <div class="tool-group">
+              <p>• COLLABORATION</p>
+              <div class="tool-tags">
+                <span>Notion</span><span>Slack</span>
+              </div>
+            </div>
+
+            <div class="tool-group">
+              <p>• AI</p>
+              <div class="tool-tags">
+                <span>ChatGPT</span><span>Claude</span><span>Gemini</span><span>Freepik AI</span><span>Midjourney</span>
+              </div>
+            </div>
+          </div>
         </div>
-      </main>
 
+        <a href="#works" class="about-next">VIEW WORKS <span>↓</span></a>
+      </div>
+    </section>
 
-      <!-- 메세지 
-    <div class="message-box">
-      <input type="text" placeholder="Send Message" />
-      <button>➤</button>
-    </div>-->
+    <section class="snap-section works-section" id="works" data-section="works">
+      <div class="poster-card">
+        <div class="card-wrapper">
+          <div class="card-image-box" id="tiltCard">
+            <img src="imgs/lanyard_card_badge.png" alt="Riley Lee pass card" class="card-img">
+          </div>
+        </div>
 
+        <header class="poster-header">
+          <h1 class="brand-title">RILEY LEE</h1>
+          <p class="section-label">SELECTED CATEGORIES</p>
+        </header>
+
+        <div class="folder-grid">
+          <a class="folder" href="uiux.html">
+            <span class="folder-icon">📁</span>
+            <strong>UI/UX</strong>
+            <small>Product &amp; Experience</small>
+          </a>
+          <a class="folder" href="brand.html">
+            <span class="folder-icon">📁</span>
+            <strong>BRAND</strong>
+            <small>Identity &amp; Campaign</small>
+          </a>
+          <a class="folder" href="visual.html">
+            <span class="folder-icon">📁</span>
+            <strong>VISUAL</strong>
+            <small>Contents &amp; Graphic</small>
+          </a>
+          <a class="folder" href="archive.html">
+            <span class="folder-icon">📁</span>
+            <strong>ARCHIVE</strong>
+            <small>Selected Experiments</small>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="snap-section footer" id="contact" data-section="contact">
+      <p class="footer-eyebrow">LET'S WORK TOGETHER</p>
+      <h2>Kyoung Eun Lee<br>Portfolio</h2>
+
+      <div class="footer-menu">
+        <a href="./files/portfolio.pdf" download>DOWNLOAD PDF</a>
+        <a href="https://www.behance.net/kyoungeunlee4" target="_blank" rel="noopener noreferrer">BEHANCE</a>
+        <a href="mailto:k.eun2050@gmail.com">CONTACT</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Built with HTML, CSS &amp; JavaScript · Designed &amp; Developed by Riley Lee</p>
+        <p>© 2026 프로덕트 디자이너 이경은 포트폴리오 ALL RIGHTS RESERVED</p>
+      </div>
+    </footer>
   </main>
-  <!-- FOOTER -->
-  <footer class="footer">
-
-    <div class="footer-logo">
-      Riley Lee Portfolio
-    </div>
-
-    <div class="footer-menu">
-      <a href="./files/portfolio.pdf" download>DOWNLOAD PDF</a>
-      <a href="https://www.behance.net/kyoungeunlee4">BEHANCE</a>
-      <a href="mailto:k.eun2050@gmail.com">CONTACT</a>
-    </div>
-    <p class="copyright">
-      Built with HTML, CSS & JavaScript Designed & Developed by Riley Lee
-    </p>
-
-    <p class="copyright">
-      © 2026 프로덕트 디자이너 이경은 포트폴리오 ALL RIGHTS RESERVED
-    </p>
-
-  </footer>
 
   <script src="script.js"></script>
-  <script src="about.js"></script>
 </body>
 
 </html>
