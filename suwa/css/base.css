@@ -1,0 +1,264 @@
+/* base CSS */
+
+/*섹션간 간격*/
+.sec1,.sec2,.sec3,.sec4,.sec5,.sec6,.sec7 {margin-bottom: 80px;}
+h2 {margin-bottom:30px}
+/*layout*/
+
+
+.wrap {}
+.wrap header { position: fixed;overflow:hidden; width:100%; background-color: rgba( 255, 255, 255, 0.5 ); z-index:1; }
+.wrap header h1 ,
+.wrap header ul {float:left; }
+.wrap header h1 { margin-left:50px; margin-top:10px}
+.wrap header h1 a {}
+.wrap header h1 a img{}
+.wrap header ul {margin-left: 10%; margin-top: 50px;}
+.wrap header ul li { float:left; margin-right: 20px;}
+.wrap header ul li a { color:#000}
+.wrap header ul li:nth-child(1) a { color:#F03;}
+.wrap .container {}
+.wrap .container section{}
+
+/*section1 배너*/
+.bannerWrap, 
+.bannerWrap #imgWrap li{/*width:1200px; 자신의 배너너비*/ }
+.bannerWrap{ overflow:hidden; border:none; margin:0 auto}
+.bannerWrap #imgWrap{ width:100000px;overflow:hidden;margin-left:-100%  /*자신의 배너너비*/}
+.bannerWrap #imgWrap li{ float:left;height:550px; text-align:center; line-height:500px; font-size:100px;
+background-color:#333 }
+.bannerWrap #imgWrap li a{ color:white}
+.bannerWrap .btnWrap{ width:100%; text-align:center; bottom:25px}
+.bannerWrap .btnWrap input#toggleBtn{ display:none}
+.bannerWrap .btnWrap input#toggleBtn + label.toggle{ display:inline-block;  
+    width: 30px;
+    height: 30px;
+    background: url(http://www.cjone.com/cjmweb/images/main/btn_banner.png) no-repeat -102px -30px;
+ cursor:pointer
+}
+.bannerWrap .btnWrap input#toggleBtn.chk + label.toggle{ 
+/* 제이쿼리로 핸들링하기 위해서 클래스로 전환한다.*/
+  background-position:-102px 0; /*stop버튼*/
+}
+.bannerWrap .btnWrap .btns{display:inline-block; position:relative; top:-5px}
+.bannerWrap .btnWrap .btns a{display:inline-block;  
+    height:15px;
+ 	width:15px;
+	margin:0 2px;
+	border-radius:50%;
+	border:2px solid #000;}
+.bannerWrap .btnWrap .btns a.active{ background:#000 no-repeat 0 0; }
+.bannerWrap a.btnL, .bannerWrap a.btnR{ 
+    display:block;
+    position: absolute;
+    top: 50%;
+    margin-top: -39px;
+    outline: 0;
+    width: 82px;
+    height: 78px;
+    text-indent: -9999px;
+    z-index: 9999;}
+.bannerWrap a.btnL{ left: 0;}
+.bannerWrap a.btnR{ right: 0; }
+.bannerWrap #dataList{ display:none}
+.bannerWrap #dataList li{}
+.bannerWrap ul#dataList li a{}
+
+/* 증가되는 만큼 추가해서 사용하시면 되요 a.data6... 요렇게*/
+a.dataimg{ display:block; width:100%; height:100%; 
+			background-position:center; 					            
+			background-repeat:no-repeat;
+			background-size:100% auto}
+a.data0{ background-image:url(../images/top_banner1.jpg)}
+a.data1{ background-image:url(../images/top_banner2.jpg)}
+a.data2{ background-image:url(../images/top_banner3.jpg)}
+a.data3{ background-image:url(../images/top_banner5.jpg)}
+
+/*section2*/
+.sec2 { overflow:hidden;margin-top: 80px;}
+.sec2 h2 {margin-left: 20%;}
+.sec2 .ct1 {overflow:hidden;/*width: 1080px;margin: 0 auto;*/}
+.sec2 .ct1 .ct1_l { width:45% ;float:left;
+						background-image:url(../images/newtrend_bg.jpg);
+						background-repeat: no-repeat;
+    					background-position: right 0px;
+						background-size:contain}
+.sec2 .ct1 .ct1_l h3 { float: right;
+							background-color: rgba( 255, 255, 255, 0.5 ); 
+							margin: 200px 95px;
+							padding: 15px;}
+.sec2 .ct1_r { float: right;
+				 width:50%;
+				 padding:23px; 
+				 background-color:#ccc; }
+.sec2 .ct1_r ul { overflow:hidden}
+.sec2 .ct1_r ul li {float: left; margin-right: 30px; width:17%}
+.sec2 .ct1_r ul li a {} 
+.sec2 .ct1_r ul li a img { width: 100%;}
+.sec2 .ct1_r ul li.mb { margin-bottom:10px}
+
+/*section3*/
+.sec3{ overflow:hidden}
+.ct2_bg{ background-image:url(../images/ct2_bg.jpg);
+			background-repeat:no-repeat;}
+.sec3 div { width:1170px; margin:0 auto}
+.sec3 ul {}
+.sec3 ul li {display: inline-block; width:33%}
+.sec3 ul li img{ width:130%}
+@-webkit-keyframes typing { from { width: 0; } }
+@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+.sec3 h2 { bottom: 69px; 
+			 /* left: 14%;*/
+			 font: bold 10em Consolas, Monaco, monospace;
+			 color:#FFF;
+			border-right: .1em solid #fff;
+			width: 16.5em; 
+			width: 14ch;
+			white-space: nowrap;
+			overflow: hidden;
+			-webkit-animation: typing 8s steps(14, end) infinite,
+					   blink-caret .3s infinite alternate;}		  
+/*section4 campaign*/
+.sec4 { overflow:hidden}
+.sec4 .cp_l { width:45%; float:left; text-align:right}
+.sec4 .cp_l div {}
+.sec4 .cp_l .cp_l_r { float:right;}
+.sec4 .cp_l div img {}
+.sec4 .cp_l h2 { text-align:center}
+.sec4 .cp_r {float: right; 
+				width:50%; 
+				height: 800px;
+				background-image:url(../images/cp_r_bg.png);
+				background-repeat: no-repeat;
+				overflow:hidden;}
+.sec4 .cp_r .outfit,
+.sec4 .cp_r .sale { position:relative; 
+						display:inline-block;}			
+.sec4 .cp_r .outfit { left: 340px;
+   						  top: 200px;
+						  padding: 30px;
+						  background-color: rgba( 0, 0, 0, 1);}
+.sec4 .cp_r .outfit h3{ color:#69C;font-size: 0.8em;}
+.sec4 .cp_r .outfit h4 a{ color:#fff}
+.sec4 .cp_r .outfit a:hover{ color:#F33}
+.sec4 .cp_r .sale a:hover { color:#FF0}
+.sec4 .cp_r .sale {padding: 60px;
+						top: 610px;
+						left: -90px;
+						background-color: rgba( 255, 107, 134, 1);}
+.sec4 .cp_r .sale h3 a{ color:#fff}
+.sec4 .cp_r .sale h4{ color:#F03; font-size:2em}
+.outfit.arrow_box:after, .outfit.arrow_box:before {right: 100%;}
+.sale.arrow_box:after, .sale.arrow_box:before {left:100%;}
+.arrow_box:after, .arrow_box:before {
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+.outfit.arrow_box:after {border-right-color: rgba( 0, 0, 0, 1 );}
+.sale.arrow_box:after {border-left-color: rgba( 255, 107, 134, 1);}
+.arrow_box:after {
+	border-color: rgba(160, 202, 213, 0);	
+	border-width: 10px;
+	margin-top: -30px;
+}
+
+/*-----------animation outfit,sale---------*/
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+
+/*section5 fashion trends*/
+/*section5 fashion trends*/
+/*section5 fashion trends*/
+.sec5 {background-image:url(../images/sec5_bg.jpg);
+		overflow: hidden;
+		padding: 100px;
+		background-repeat: no-repeat;}
+.sec5 div {} 
+.sec5 .trend_youtube{ width:50%; float:left}
+.sec5 .trend_r { float:left;/*width:30%; margin-left:10%; 
+					 margin-top: 30px;*/
+					 background-color: rgba( 0, 0, 0, 0.5 );
+					 padding: 20px;
+					 margin-left: 150px;}
+.sec5 .trend_youtube iframe {}
+.sec5 .trend_r h3 {font-size: 1.5em; font-weight: 900;margin-bottom:30px; color:#fff}
+.sec5 .trend_r h3 span { color:#F00}
+.sec5 .trend_r p {line-height: 80px;color:#ccc; font-size:0.8em}
+/*section6 codi book*/
+.sec6 {}
+.sec6 h2{}
+.sec6 ul { }
+.sec6 ul li {display: inline-block;}
+.sec6 ul li a {}
+.sec6 ul li a img { width:300px}
+.sec6 p{}
+/*section7 mileage*/
+.sec7 { background-color:#666; padding:20px}
+.sec7  h2{}
+.sec7 p { color:#FFF}
+.sec7 fieldset {}
+.sec7 fieldset input { display: block; margin: 0 auto; width:150px}
+.sec7 fieldset butten {background-color:#333;
+							 padding: 3.5px 42px;}
+.sec7,
+.sec7  h2,
+.sec7  p,
+.sec7 fieldset input ,
+.sec7 fieldset butten { margin-bottom:20px}
+/*footer*/
+footer { background-color:#000; overflow:hidden;}
+footer h1 { float:left}
+footer div { float:right; padding:5px 10px 0 0;}
+footer h1,
+footer div h2,
+footer div p { color:#FFF}
+footer div h2 { text-align:right; font-size:1em; margin-bottom: 0px;}
+footer div p  { font-size:0.5em}
+footer div p span{ color:#F33;}
