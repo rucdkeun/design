@@ -6,14 +6,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Riley. lee</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="about.css">
 </head>
 
 <body>
 
   <header class="navbar">
     <a href="index.html" class="active">HOME</a>
-    <a href="about.html">ABOUT</a>
+    <!--<a href="about.html">ABOUT</a>-->
     <a href="https://fig.page/PcxB1cG" target="_blank" rel="noopener noreferrer">VIEW PORTFOLIO</a>
     <a href="mailto:k.eun2050@gmail.com">CONTACT</a>
   </header>
@@ -38,34 +42,49 @@
         </div>
       </div>
 
-      <div class="woman-tag">Product Designer</div>
+      <div class="woman-tag">Brand Experience & Product Designer</div>
     </section>
 
     <!-- 메인 이미지 -->
     <section class="image-area">
-      <div class="frame"></div>
+      <!-- Main Poster Canvas -->
+      <main class="page-container">
+        <div class="poster-card">
 
-      <img src="imgs/kylie.jpeg" alt="Riley" class="main-model" />
+          <!-- Top Section: Lanyard Badge Card Image (Interactive Hover Motion) -->
+          <div class="card-wrapper">
+            <div class="card-image-box" id="tiltCard">
+              <img src="imgs/lanyard_card_badge.png" alt="RILEY LEE Pass Card" class="card-img">
+            </div>
+          </div>
+          <!-- Main Title: RILEY LEE (Overlapped by Card) -->
+          <header class="poster-header">
+            <h1 class="brand-title">RILEY LEE</h1>
+          </header>
+          <!-- Main Content Image Section -->
+          <section class="about-image-section">
+            <!-- 버튼들 -->
+            <button class="folder folder1" onclick="location.href='uiux.html'">
+              📁 <span>UI/UX</span>
+            </button>
 
-      <!-- 버튼들 -->
-      <button class="folder folder1" onclick="location.href='uiux.html'">
-        📁 <span>UI/UX</span>
-      </button>
+            <button class="folder folder2" onclick="location.href='brand.html'">
+              📁 <span>BRAND</span>
+            </button>
 
-      <button class="folder folder2" onclick="location.href='brand.html'">
-        📁 <span>BRAND</span>
-      </button>
+            <button class="folder folder3" onclick="location.href='visual.html'">
+              📁 <span>VISUAL</span>
+            </button>
 
-      <button class="folder folder3" onclick="location.href='visual.html'">
-        📁 <span>VISUAL</span>
-      </button>
+            <button class="folder folder4" onclick="location.href='archive.html'">
+              📁 <span>ARCHIVE</span>
+            </button>
+          </section>
+        </div>
+      </main>
 
-      <button class="folder folder4" onclick="location.href='archive.html'">
-        📁 <span>ARCHIVE</span>
-      </button>
-    </section>
 
-    <!-- 메세지 
+      <!-- 메세지 
     <div class="message-box">
       <input type="text" placeholder="Send Message" />
       <button>➤</button>
@@ -76,7 +95,7 @@
   <footer class="footer">
 
     <div class="footer-logo">
-      Product Designer
+      Riley Lee Portfolio
     </div>
 
     <div class="footer-menu">
@@ -84,6 +103,9 @@
       <a href="https://www.behance.net/kyoungeunlee4">BEHANCE</a>
       <a href="mailto:k.eun2050@gmail.com">CONTACT</a>
     </div>
+    <p class="copyright">
+      Built with HTML, CSS & JavaScript Designed & Developed by Riley Lee
+    </p>
 
     <p class="copyright">
       © 2026 프로덕트 디자이너 이경은 포트폴리오 ALL RIGHTS RESERVED
@@ -92,6 +114,7 @@
   </footer>
 
   <script src="script.js"></script>
+  <script src="about.js"></script>
 </body>
 
 </html>
